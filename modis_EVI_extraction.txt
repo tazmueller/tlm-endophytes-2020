@@ -1,0 +1,228 @@
+//Script to extract MODIS Satellite EVI and NDVI information from point data in Earth Engine Code
+
+
+//////////////////////////////
+//////////// NDVI ////////////
+//////////////////////////////
+
+
+// Load a FeatureCollection from a table dataset: 'RESOLVE' ecoregions.
+var sites = ee.FeatureCollection('projects/ee-lakex055/assets/clarkia_site_coords_TM');
+
+// Modis Collection MOD13Q1.006
+// Availble from 2000-02-18T00:00:00Z–2023-01-01T00:00:00
+var startDate = ee.Date.fromYMD(2000,04,01);
+var endDate = ee.Date.fromYMD(2022,04,01);
+
+// add satellite time series: MODIS NDVI 250m 16 day -------------
+var dataset_NDVI = ee.ImageCollection("MODIS/006/MOD13Q1")
+                  .filterDate(startDate, endDate) // filter by start and end dates
+                  .filterBounds(sites.geometry()) // filter by geometry of sites
+                  .select('NDVI'); // select the NDVI band
+
+                   
+// Image collection of MODIS imagery containing 506 images (elements)
+print("NDVI Collection",dataset_NDVI);               
+
+// Display first image in MODIS image collection
+//Map.addLayer(dataset_NDVI.first());
+
+// Define scaling factor to MODIS imagery to scale data from [-2000, 10000] to [-0.2, 1.0] for NDVI
+var scaling = function(image){
+    var scaled = image.select('NDVI').divide(10000);
+    return scaled.copyProperties(image, ['system:index', 'system:time_start'])
+}
+
+// Apply (map) the scaling factor across the dataset
+var scaled_ndvi = dataset_NDVI.map(scaling);
+//print(scaled_ndvi);
+
+// getRegion function outputs rows contining image id (date), coordinates (lat/long), time, and NDVI value
+var ndvi_sample = scaled_ndvi.getRegion(sites, 250);
+
+// print the first record of the NDVI sample
+print(ndvi_sample.get(1));
+
+// Format the ndvi_sample list into a feature collection so we can export as a csv
+var ndvi_fc = ee.FeatureCollection(ndvi_sample.map(function(point) {
+  return ee.Feature(null, {'value': point})
+}))
+
+
+print(ndvi_fc.first())
+
+// Export to Google Drive
+// Export.table.toDrive(ndvi_fc)
+
+
+
+//////////////////////////////
+// Enhanced Vegetation Index//
+//////////////////////////////
+
+
+// add satellite time series: MODIS EVI 250m 16 day -------------           
+var dataset_EVI = ee.ImageCollection("MODIS/006/MOD13Q1")
+                  .filterDate(startDate, endDate)
+                  .filterBounds(sites.geometry())
+                  .select('EVI');
+                   
+// Image collection of MODIS imagery containing 506 images (elements)
+print("EVI Collection",dataset_EVI);               
+
+// Display first image in MODIS image collection
+//Map.addLayer(dataset_NDVI.first());
+
+// Define scaling factor to MODIS imagery to scale data from [-2000, 10000] to [-0.2, 1.0] for NDVI
+var scaling = function(image){
+    var scaled = image.select('EVI').divide(10000);
+    return scaled.copyProperties(image, ['system:index', 'system:time_start'])
+}
+
+// Apply (map) the scaling factor across the dataset
+var scaled_evi = dataset_EVI.map(scaling);
+//print(scaled_ndvi);
+
+// getRegion function outputs rows contining image id (date), coordinates (lat/long), time, and NDVI value
+var evi_sample = scaled_evi.getRegion(sites, 250);
+
+// print the first record of the NDVI sample
+print(evi_sample.get(1));
+
+// Format the ndvi_sample list into a feature collection so we can export as a csv
+var evi_fc = ee.FeatureCollection(evi_sample.map(function(point) {
+  return ee.Feature(null, {'value': point})
+}))
+
+
+print(evi_fc.first())
+
+// Export to Google Drive
+// Export.table.toDrive(evi_fc)
+
+
+
+
+
+//////////////////////////////
+//    Leaf Area Index       //
+//////////////////////////////
+ 
+//https://developers.google.com/earth-engine/datasets/catalog/MODIS_006_MCD15A3H
+// LAI ranges from 0 - 100 with increments of 0.1
+
+var dataset_LAI = ee.ImageCollection("MODIS/006/MCD15A3H")
+                  .filterDate(startDate, endDate)
+                  .filterBounds(sites.geometry())
+                  .select('Lai');
+          
+// Image collection of MODIS imagery containing 506 images (elements)
+print("LAI Collection",dataset_LAI);               
+
+// Display first image in MODIS image collection
+//Map.addLayer(dataset_NDVI.first());
+
+//We don't need to scale LAI
+
+// getRegion function outputs rows contining image id (date), coordinates (lat/long), time, and NDVI value
+var LAI_sample = dataset_LAI.getRegion(sites, 500);
+
+// print the first record of the NDVI sample
+print(LAI_sample.get(1));
+
+// Format the ndvi_sample list into a feature collection so we can export as a csv
+var lai_fc = ee.FeatureCollection(LAI_sample.map(function(point) {
+  return ee.Feature(null, {'value': point})
+}))
+
+
+print(lai_fc.first())
+
+// Export to Google Drive
+// Export.table.toDrive(evi_fc)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//////////////////////////////
+///////// Data Vis ///////////
+//////////////////////////////
+
+//Visualize the first NDVI Layer
+
+var ndvi_image = scaled_ndvi.first();
+
+ var ndviVis = {
+  min: 0.0,
+  max: 1.0,
+  palette: [
+  'FFFFFF', 'CE7E45', 'DF923D', 'F1B555', 'FCD163', '99B718', '74A901',
+  '66A000', '529400', '3E8601', '207401', '056201', '004C00', '023B01',
+  '012E01', '011D01', '011301'
+   ],
+   };
+  Map.addLayer(ndvi_image, ndviVis, 'NDVI');   
+  
+  
+//Visualize the first EVI Layer
+
+var evi_image = scaled_evi.first();
+
+ var eviVis = {
+  min: 0.1,
+  max: 0.51,
+  palette: [
+  'FFFFFF', 'CE7E45', 'DF923D', 'F1B555', 'FCD163', '99B718', '74A901',
+  '66A000', '529400', '3E8601', '207401', '056201', '004C00', '023B01',
+  '012E01', '011D01', '011301'
+   ],
+   };
+  Map.addLayer(evi_image, eviVis, 'EVI');  
+
+
+//Visualize the first LAI Layer
+
+var lai_image = dataset_LAI.first();
+
+ var laiVis = {
+  min: 0.0,
+  max: 100.0,
+  palette: [
+  'FFFFFF', 'CE7E45', 'DF923D', 'F1B555', 'FCD163', '99B718', '74A901',
+  '66A000', '529400', '3E8601', '207401', '056201', '004C00', '023B01',
+  '012E01', '011D01', '011301'
+   ],
+   };
+  Map.addLayer(lai_image, laiVis, 'LAI');  
+
+
+
+// Display sites as red points
+
+Map.addLayer(sites, {color: 'FF0000'}, 'SurveySites');
+
+
+
+
+// End of File

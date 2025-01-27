@@ -1,0 +1,125 @@
+sampleID,siteID,siteName,siteType,host,x,y,elevation,soilType,ppt,solslope,annualtmean,avg_evi
+14M,S14,site 14,xan_only,marah,-118.5216,35.31382,615,metasedimentary,277.649,19.6469,16.0149,0.218331423
+14X,S14,site 14,xan_only,xantiana,-118.5216,35.31382,615,metasedimentary,277.649,19.6469,16.0149,0.218331423
+16M,S16,site 16,ung_incl,marah,-118.592,35.32184,628,igneous,288.883,19.4738,16.085,0.233892292
+16U,S16,site 16,ung_incl,unguiculata,-118.592,35.32184,628,igneous,288.883,19.4738,16.085,0.233892292
+16X,S16,site 16,ung_incl,xantiana,-118.592,35.32184,628,igneous,288.883,19.4738,16.085,0.233892292
+17M,S17,site 17,xan_only,marah,-118.5853,35.33686,790,igneous,291.957,19.4938,15.4699,0.232488735
+17X,S17,site 17,xan_only,xantiana,-118.5853,35.33686,790,igneous,291.957,19.4938,15.4699,0.232488735
+18M,S18,site 18,xan_only,marah,-118.5725,35.34747,1145,igneous,302.204,19.6464,14.1449,0.254531028
+18X,S18,site 18,xan_only,xantiana,-118.5725,35.34747,1145,igneous,302.204,19.6464,14.1449,0.254531028
+22M,S22,site 22,ung_incl,marah,-118.4507,35.8398,920,metasedimentary,368.577,18.4305,15.565,0.157185771
+22U,S22,site 22,ung_incl,unguiculata,-118.4507,35.8398,920,metasedimentary,368.577,18.4305,15.565,0.157185771
+22X,S22,site 22,ung_incl,xantiana,-118.4507,35.8398,920,metasedimentary,368.577,18.4305,15.565,0.157185771
+49BM,49B,49B,xan_only,marah,-118.5311,35.47454,1156,igneous,337.536,18.7858,14.1649,0.227286166
+49BX,49B,49B,xan_only,xantiana,-118.5311,35.47454,1156,igneous,337.536,18.7858,14.1649,0.227286166
+49M,S49,site 49,xan_only,marah,-118.5405,35.48097,1237,igneous,358.683,18.9368,13.8849,0.300855336
+49X,S49,site 49,xan_only,xantiana,-118.5405,35.48097,1237,igneous,358.683,18.9368,13.8849,0.300855336
+63M,S63,site 63,xan_only,marah,-118.4358,35.79344,960,metasedimentary,337.724,19.4394,14.9849,0.154301581
+63X,S63,site 63,xan_only,xantiana,-118.4358,35.79344,960,metasedimentary,337.724,19.4394,14.9849,0.154301581
+6M,S6,site 6,xan_only,marah,-118.4864,35.97129,1159,metasedimentary,473.886,19.2848,13.8299,0.193688538
+6X,S6,site 6,xan_only,xantiana,-118.4864,35.97129,1159,metasedimentary,473.886,19.2848,13.8299,0.193688538
+84M,S84,site 84,xan_only,marah,-118.4463,35.3046,796,igneous,274.74,19.6065,15.2249,0.222202174
+84X,S84,site 84,xan_only,xantiana,-118.4463,35.3046,796,igneous,274.74,19.6065,15.2249,0.222202174
+85M,S85,site 85,xan_only,marah,-118.4742,35.30209,740,igneous,275.559,19.169,15.2449,0.220714229
+85X,S85,site 85,xan_only,xantiana,-118.4742,35.30209,740,igneous,275.559,19.169,15.2449,0.220714229
+BCM,BC,bodfish crest,xan_only,marah,-118.5056,35.57815,1220,metasedimentary,314.678,18.3249,14.7099,0.166503162
+BCX,BC,bodfish crest,xan_only,xantiana,-118.5056,35.57815,1220,metasedimentary,314.678,18.3249,14.7099,0.166503162
+BGM,BG,black gulch,xan_only,marah,-118.529,35.59161,700,igneous,283.235,19.2895,16.7649,0.242318972
+BGX,BG,black gulch,xan_only,xantiana,-118.529,35.59161,700,igneous,283.235,19.2895,16.7649,0.242318972
+BRM,BR,borel road,xan_only,marah,-118.5177,35.59024,785,igneous,285.359,17.8749,16.4849,0.173875692
+BRX,BR,borel road,xan_only,xantiana,-118.5177,35.59024,785,igneous,285.359,17.8749,16.4849,0.173875692
+C3M,C3,camp 3,xan_only,marah,-118.4527,35.81046,930,igneous,357.433,18.6893,15.6649,0.1745083
+C3X,C3,camp 3,xan_only,xantiana,-118.4527,35.81046,930,igneous,357.433,18.6893,15.6649,0.1745083
+CCM,CC,corral creek,ung_incl,marah,-118.4487,35.85642,965,metasedimentary,361.1019,19.084,15.4549,0.162492885
+CCU,CC,corral creek,ung_incl,unguiculata,-118.4487,35.85642,965,metasedimentary,361.1019,19.084,15.4549,0.162492885
+CCX,CC,corral creek,ung_incl,xantiana,-118.4487,35.85642,965,metasedimentary,361.1019,19.084,15.4549,0.162492885
+CFM,CF,cow flat,ung_incl,marah,-118.6553,35.52898,690,igneous,357.184,16.2065,15.3849,0.21611581
+CFU,CF,cow flat,ung_incl,unguiculata,-118.6553,35.52898,690,igneous,357.184,16.2065,15.3849,0.21611581
+CFX,CF,cow flat,ung_incl,xantiana,-118.6553,35.52898,690,igneous,357.184,16.2065,15.3849,0.21611581
+CGM,CG,china gardens,ung_incl,marah,-118.6486,35.53718,605,igneous,330.45,17.747,16.9749,0.203852372
+CGU,CG,china gardens,ung_incl,unguiculata,-118.6486,35.53718,605,igneous,330.45,17.747,16.9749,0.203852372
+CGX,CG,china gardens,ung_incl,xantiana,-118.6486,35.53718,605,igneous,330.45,17.747,16.9749,0.203852372
+CHFM,CHF,chico flat,xan_only,marah,-118.4593,35.82357,995,igneous,357.793,18.7515,15.5849,0.143961265
+CHFX,CHF,chico flat,xan_only,xantiana,-118.4593,35.82357,995,igneous,357.793,18.7515,15.5849,0.143961265
+CPM,CP,cattle pens,ung_incl,marah,-118.6667,35.51667,986,igneous,382.156,15.4763,15.5149,0.212940711
+CPU,CP,cattle pens,ung_incl,unguiculata,-118.6667,35.51667,986,igneous,382.156,15.4763,15.5149,0.212940711
+CPX,CP,cattle pens,ung_incl,xantiana,-118.6667,35.51667,986,igneous,382.156,15.4763,15.5149,0.212940711
+DCM,DC,democrat,ung_incl,marah,-118.6278,35.53081,750,igneous,336.136,17.7198,16.4999,0.204448814
+DCU,DC,democrat,ung_incl,unguiculata,-118.6278,35.53081,750,igneous,336.136,17.7198,16.4999,0.204448814
+DCX,DC,democrat,ung_incl,xantiana,-118.6278,35.53081,750,igneous,336.136,17.7198,16.4999,0.204448814
+DGM,DG,drogon,ung_incl,marah,-118.7542,35.46755,423,igneous,281.867,18.495,17.38,0.124245652
+DGU,DG,drogon,ung_incl,unguiculata,-118.7542,35.46755,423,igneous,281.867,18.495,17.38,0.124245652
+DGX,DG,drogon,ung_incl,xantiana,-118.7542,35.46755,423,igneous,281.867,18.495,17.38,0.124245652
+DLEM,DLE,delonegha east,ung_incl,marah,-118.6173,35.54877,660,igneous,328.747,18.8713,16.7199,0.190206324
+DLEU,DLE,delonegha east,ung_incl,unguiculata,-118.6173,35.54877,660,igneous,328.747,18.8713,16.7199,0.190206324
+DLEX,DLE,delonegha east,ung_incl,xantiana,-118.6173,35.54877,660,igneous,328.747,18.8713,16.7199,0.190206324
+DLWM,DLW,delonegha west,xan_only,marah,-118.6211,35.54434,700,igneous,325.1669,19.3463,16.5749,0.203391304
+DLWX,DLW,delonegha west,xan_only,xantiana,-118.6211,35.54434,700,igneous,325.1669,19.3463,16.5749,0.203391304
+DRM,DR,doctor,xan_only,marah,-118.7114,35.47466,469,igneous,300.856,17.6302,16.2099,0.160622134
+DRX,DR,doctor,xan_only,xantiana,-118.7114,35.47466,469,igneous,300.856,17.6302,16.2099,0.160622134
+FRM,FR,freeway ridge,xan_only,marah,-118.5522,35.58305,810,igneous,321.644,19.8915,15.7449,0.233931028
+FRX,FR,freeway ridge,xan_only,xantiana,-118.5522,35.58305,810,igneous,321.644,19.8915,15.7449,0.233931028
+GCM,GC,golf course,xan_only,marah,-118.4299,35.7315,860,metasedimentary,285.324,19.2387,16.1999,0.146826877
+GCX,GC,golf course,xan_only,xantiana,-118.4299,35.7315,860,metasedimentary,285.324,19.2387,16.1999,0.146826877
+GLM,GL,gold ledge,xan_only,marah,-118.4548,35.87429,990,igneous,371.896,18.9248,15.3199,0.171849802
+GLX,GL,gold ledge,xan_only,xantiana,-118.4548,35.87429,990,igneous,371.896,18.9248,15.3199,0.171849802
+GPM,GP,good place,ung_incl,marah,-118.785,35.4478,357,igneous,260.587,17.5604,17.9349,0.130448814
+GPU,GP,good place,ung_incl,unguiculata,-118.785,35.4478,357,igneous,260.587,17.5604,17.9349,0.130448814
+GPX,GP,good place,ung_incl,xantiana,-118.785,35.4478,357,igneous,260.587,17.5604,17.9349,0.130448814
+GRWM,GRW,green rock west,ung_incl,marah,-118.5094,35.59737,750,igneous,279.0779,19.4448,16.7099,0.171930237
+GRWU,GRW,green rock west,ung_incl,unguiculata,-118.5094,35.59737,750,igneous,279.0779,19.4448,16.7099,0.171930237
+GRWX,GRW,green rock west,ung_incl,xantiana,-118.5094,35.59737,750,igneous,279.0779,19.4448,16.7099,0.171930237
+H155M,H155,highway 155,ung_incl,marah,-118.4998,35.72075,1200,igneous,388.188,18.9115,14.8099,0.239744466
+H155U,H155,highway 155,ung_incl,unguiculata,-118.4998,35.72075,1200,igneous,388.188,18.9115,14.8099,0.239744466
+H155X,H155,highway 155,ung_incl,xantiana,-118.4998,35.72075,1200,igneous,388.188,18.9115,14.8099,0.239744466
+HBM,HB,hobo,ung_incl,marah,-118.53,35.57398,740,metasedimentary,309.55,18.8215,16.7149,0.201905929
+HBU,HB,hobo,ung_incl,unguiculata,-118.53,35.57398,740,metasedimentary,309.55,18.8215,16.7149,0.201905929
+HBX,HB,hobo,ung_incl,xantiana,-118.53,35.57398,740,metasedimentary,309.55,18.8215,16.7149,0.201905929
+HQM,HQ,headquarters,ung_incl,marah,-118.4491,35.80089,874,igneous,323.415,19.268,16.2449,0.175992292
+HQU,HQ,headquarters,ung_incl,unguiculata,-118.4491,35.80089,874,igneous,323.415,19.268,16.2449,0.175992292
+HQX,HQ,headquarters,ung_incl,xantiana,-118.4491,35.80089,874,igneous,323.415,19.268,16.2449,0.175992292
+KVM,KV,keyesville,xan_only,marah,-118.5143,35.62399,960,igneous,315.1309,18.987,14.8549,0.20926166
+KVX,KV,keyesville,xan_only,xantiana,-118.5143,35.62399,960,igneous,315.1309,18.987,14.8549,0.20926166
+LCM,LC,lucas creek,xan_only,marah,-118.7044,35.48251,530,igneous,298.711,18.5364,16.7599,0.172071937
+LCX,LC,lucas creek,xan_only,xantiana,-118.7044,35.48251,530,igneous,298.711,18.5364,16.7599,0.172071937
+LOM,LO,live oak,ung_incl,marah,-118.734,35.47887,485,igneous,279.765,17.6208,17.0249,0.152326285
+LOU,LO,live oak,ung_incl,unguiculata,-118.734,35.47887,485,igneous,279.765,17.6208,17.0249,0.152326285
+LOX,LO,live oak,ung_incl,xantiana,-118.734,35.47887,485,igneous,279.765,17.6208,17.0249,0.152326285
+LSMM,LSM,lower sawmill,xan_only,marah,-118.4748,35.67973,945,igneous,299.69,19.3197,15.5199,0.17291166
+LSMX,LSM,lower sawmill,xan_only,xantiana,-118.4748,35.67973,945,igneous,299.69,19.3197,15.5199,0.17291166
+MCTM,MCT,mill creek trailhead,ung_incl,marah,-118.6144,35.53759,750,igneous,331.205,18.175,16.4399,0.216541107
+MCTU,MCT,mill creek trailhead,ung_incl,unguiculata,-118.6144,35.53759,750,igneous,331.205,18.175,16.4399,0.216541107
+MCTX,MCT,mill creek trailhead,ung_incl,xantiana,-118.6144,35.53759,750,igneous,331.205,18.175,16.4399,0.216541107
+MOM,MO,muddy oaks,ung_incl,marah,-118.5769,35.33886,1022,igneous,294.673,20.0787,14.5599,0.228438933
+MOU,MO,muddy oaks,ung_incl,unguiculata,-118.5769,35.33886,1022,igneous,294.673,20.0787,14.5599,0.228438933
+MOX,MO,muddy oaks,ung_incl,xantiana,-118.5769,35.33886,1022,igneous,294.673,20.0787,14.5599,0.228438933
+MPM,MP,mimulus pictus,ung_incl,marah,-118.69,35.50613,555,igneous,343.999,19.054,16.6599,0.193959684
+MPU,MP,mimulus pictus,ung_incl,unguiculata,-118.69,35.50613,555,igneous,343.999,19.054,16.6599,0.193959684
+MPX,MP,mimulus pictus,ung_incl,xantiana,-118.69,35.50613,555,igneous,343.999,19.054,16.6599,0.193959684
+OKEM,OKE,old kern canyon road east,xan_only,marah,-118.5664,35.5658,730,igneous,354.571,17.2574,16.2699,0.191686561
+OKEX,OKE,old kern canyon road east,xan_only,xantiana,-118.5664,35.5658,730,igneous,354.571,17.2574,16.2699,0.191686561
+OKWM,OKW,old kern canyon road west,xan_only,marah,-118.5792,35.56134,750,igneous,347.9169,18.0328,16.6599,0.175512648
+OKWX,OKW,old kern canyon road west,xan_only,xantiana,-118.5792,35.56134,750,igneous,347.9169,18.0328,16.6599,0.175512648
+ORSX,OSR,old state road,xan_only,xantiana,-118.484,35.69993,1060,igneous,322.134,18.3776,14.8249,0.190366008
+OSRM,OSR,old state road,xan_only,marah,-118.484,35.69993,1060,igneous,322.134,18.3776,14.8249,0.190366008
+RFM,RF,raft,xan_only,marah,-118.5792,35.56817,660,igneous,348.329,19.5483,16.6999,0.21051996
+RFX,RF,raft,xan_only,xantiana,-118.5792,35.56817,660,igneous,348.329,19.5483,16.6999,0.21051996
+S8M,S8,site 8,xan_only,marah,-118.5123,35.5929,830,igneous,290.11,17.833,16.1249,0.18115751
+S8X,S8,site 8,xan_only,xantiana,-118.5123,35.5929,830,igneous,290.11,17.833,16.1249,0.18115751
+SCFM,SCF,salmon creek falls,xan_only,marah,-118.4656,35.89809,1020,igneous,410.955,19.3632,14.8949,0.185942292
+SCFX,SCF,salmon creek falls,xan_only,xantiana,-118.4656,35.89809,1020,igneous,410.955,19.3632,14.8949,0.185942292
+SMRM,SMR,saddle mountain road,xan_only,marah,-118.4704,35.54049,1841,metasedimentary,423.237,16.8166,11.6849,0.156610672
+SMRX,SMR,saddle mountain road,xan_only,xantiana,-118.4704,35.54049,1841,metasedimentary,423.237,16.8166,11.6849,0.156610672
+SQM,SQ,squirrel mountain,xan_only,marah,-118.4174,35.60384,1130,metasedimentary,339.877,17.4959,15.0598,0.17956087
+SQX,SQ,squirrel mountain,xan_only,xantiana,-118.4174,35.60384,1130,metasedimentary,339.877,17.4959,15.0598,0.17956087
+URNM,URN,upper richbar north,ung_incl,marah,-118.7195,35.47482,480,igneous,286.263,18.396,17.3498,0.181593281
+URNU,URN,upper richbar north,ung_incl,unguiculata,-118.7195,35.47482,480,igneous,286.263,18.396,17.3498,0.181593281
+URNX,URN,upper richbar north,ung_incl,xantiana,-118.7195,35.47482,480,igneous,286.263,18.396,17.3498,0.181593281
+USMM,USM,upper sawmill,xan_only,marah,-118.5122,35.67406,1300,igneous,388.331,19.26,14.5849,0.235139921
+USMX,USM,upper sawmill,xan_only,xantiana,-118.5122,35.67406,1300,igneous,388.331,19.26,14.5849,0.235139921
+CTR39,CTR,CTR,none,control,,,,,,,,
+CTR93,CTR,CTR,none,control,,,,,,,,
+CTR94,CTR,CTR,none,control,,,,,,,,
+CTR95,CTR,CTR,none,control,,,,,,,,
+CTR96,CTR,CTR,none,control,,,,,,,,
