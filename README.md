@@ -4,14 +4,14 @@ Data and code for Mueller & Moeller study on foliar fungal endophyte communities
 
 FILES IN THIS REPOSITORY:
 
-1. endo_surv_metadata.csv
-2. dada2 cleaning & processing of raw sequence files.R
-3. processing.R
-4. analysis.R
-5. modis_EVI_extraction.txt
+endo_surv_metadata.csv
+dada2 cleaning & processing of raw sequence files.R
+processing.R
+analysis.R
+modis_EVI_extraction.txt
 
 
-1. "endo_surv_metadata.csv" contains metadata & environmental data for samples at each site.
+"endo_surv_metadata.csv" contains metadata & environmental data for samples at each site.
 Variables:
   sampleID - unique ID for each sequenced sample. 
   siteID - abbreviation code for collection site
@@ -28,13 +28,13 @@ Variables:
   avg_evi - Average Enhanced Vegetation Index (sourced from satellite data at the 250m resolution- see modis_evi_extraction.txt, calculated by averaging all values taken every 2 weeks between 2000 - 2019)
 
 
-2. "dada2 cleaning & processing of raw sequence files.R" is an R script that contains code (some of which must be run in R and some of which must be run in zsh (as commented in the script)  to process  fastq files, align, clean and demultiplex sequences, remove primers, create an OTU table, and assign taxonomy.
+"dada2 cleaning & processing of raw sequence files.R" is an R script that contains code (some of which must be run in R and some of which must be run in zsh (as commented in the script)  to process  fastq files, align, clean and demultiplex sequences, remove primers, create an OTU table, and assign taxonomy.
    
-3. "processing.R" is an R script that contains code to assemble OTU table, sample metadata, and taxonomy table into a phyloseq object, clean & process sequences to filter for only fungal taxa, remove rinsewater controls, pruning, rarefying, and subsetting dataset, and calculating alpha diversity.
+"processing.R" is an R script that contains code to assemble OTU table, sample metadata, and taxonomy table into a phyloseq object, clean & process sequences to filter for only fungal taxa, remove rinsewater controls, pruning, rarefying, and subsetting dataset, and calculating alpha diversity.
    
-4. "analysis.R" is an R script that contains code used for statistical analyses, including: calculating summary statistics, running alpha diversity linear models and Tukey tests, making spatial & environmental distance matrices, mantel tests, differential abundance analysis, and linear mixed-effect models of shared & unique taxa.
+"analysis.R" is an R script that contains code used for statistical analyses, including: calculating summary statistics, running alpha diversity linear models and Tukey tests, making spatial & environmental distance matrices, mantel tests, differential abundance analysis, and linear mixed-effect models of shared & unique taxa.
 
-5. "modis_EVI_extraction.txt" is a textfile that contains code used to retrieve and access MODIS satellite data, to be run in Google Earth Engine's code editor, from (https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MOD13Q1)
+"modis_EVI_extraction.txt" is a textfile that contains code used to retrieve and access MODIS satellite data, to be run in Google Earth Engine's code editor, from (https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MOD13Q1)
 
    
 
