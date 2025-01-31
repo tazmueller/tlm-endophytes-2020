@@ -13,19 +13,19 @@ modis_EVI_extraction.txt
 
 "endo_surv_metadata.csv" contains metadata & environmental data for samples at each site.
 Variables:
-  sampleID - unique ID for each sequenced sample. 
-  siteID - abbreviation code for collection site
-  siteName - full name for collection site
-  siteType - whether site was in XM or UXM categories (i.e. if C. unguiculata was present/collected)
-  host - species of plant host was collected from
-  x - longitude
-  y - latitude
-  elevation - elevation in meters
-  soilType - soil parent material type
-  ppt - 30-year normals for annual total precipitation (mm) (sourced from PRISM at 800m grid cell resolution)
-  solslope - 30-year normals for average daily total shortwave radiation on a sloped ground surface (MJ per square m per day)(sourced from PRISM at 800m grid cell resolution)
-  annualtmean - 30-year normals for annual mean temperature (celsius) (sourced from PRISM at 800m grid cell resolution)
-  avg_evi - Average Enhanced Vegetation Index (sourced from satellite data at the 250m resolution- see modis_evi_extraction.txt, calculated by averaging all values taken every 2 weeks between 2000 - 2019)
+  'sampleID' - unique ID for each sequenced sample. 
+  'siteID' - abbreviation code for collection site. 
+  'siteName' - full name for collection site. 
+  'siteType' - whether site was in XM or UXM categories (i.e. if C. unguiculata was present/collected). 
+  'host' - species of plant host was collected from. 
+  'x' - longitude. 
+  'y' - latitude. 
+  'elevation' - elevation in meters. 
+  'soilType' - soil parent material type. 
+  'ppt' - 30-year normals for annual total precipitation (mm) (sourced from PRISM at 800m grid cell resolution). 
+  'solslope' - 30-year normals for average daily total shortwave radiation on a sloped ground surface (MJ per square m per day)(sourced from PRISM at 800m grid cell resolution). 
+  'annualtmean' - 30-year normals for annual mean temperature (celsius) (sourced from PRISM at 800m grid cell resolution). 
+  'avg_evi' - Average Enhanced Vegetation Index (sourced from satellite data at the 250m resolution- see modis_evi_extraction.txt, calculated by averaging all values taken every 2 weeks between 2000 - 2019). 
 
 
 "dada2 cleaning & processing of raw sequence files.R" is an R script that contains code (some of which must be run in R and some of which must be run in zsh (as commented in the script)  to process  fastq files, align, clean and demultiplex sequences, remove primers, create an OTU table, and assign taxonomy.
